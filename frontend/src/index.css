@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#fdfdfd] text-slate-900;
+    background: radial-gradient(circle at 50% 50%, #f8fafc 0%, #f1f5f9 100%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg shadow-indigo-100 hover:shadow-indigo-200 hover:-translate-y-0.5 transition-all;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white shadow-2xl shadow-slate-200/50 rounded-[2.5rem];
+  }
+}
